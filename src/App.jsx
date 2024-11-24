@@ -6,7 +6,7 @@ import Cart from './components/Cart/Cart'
 import Placeorder from './components/Placeorder'
 import Footer from './components/footer/Footer'
 import { useState } from 'react'
-import LoginPopup from './components/Login-popup/loginPopup'
+import LoginPopup from './components/Login-popup/LoginPopup'
 
 function App() {
     const[showLogin, setShowLogin] = useState(false);
