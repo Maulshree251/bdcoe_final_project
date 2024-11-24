@@ -1,0 +1,29 @@
+@media (max-width: 1106px){
+   
+    .header-contents{
+        max-width: 45%;
+    }
+    .header-contents p{
+        display: none;
+    }
+
+}
+
+@media (max-width: 881px){
+    
+    .header-contents{
+        max-width: 65%;
+      
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+        font-size: larger;
+    }
+    .header-contents h1{
+        display: none;
+    }
+}
+

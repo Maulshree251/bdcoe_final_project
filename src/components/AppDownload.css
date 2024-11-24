@@ -1,0 +1,13 @@
+.icons img{
+    width: max(30vw,120px);
+    /* transform: scale(1.05); */
+    transition: 0.5s;
+    max-width: 180px;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    transform: scale(1.05);
+}
+
+
