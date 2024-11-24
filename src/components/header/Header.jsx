@@ -3,7 +3,7 @@ import './header.css'
 
 const Header = () => {
   return (
-    <div className="header h-[34vw] my-10 mx-auto bg-header-image  bg-cover object-cover relative rounded-3xl overflow-hidden">
+    <div className="header h-[34vw] my-10 mx-auto bg-header-image  bg-cover object-contain bg-center  relative rounded-3xl overflow-hidden">
       <div className="header-contents text absolute flex flex-col items-start gap-[1.5vw] max-w-[50%] bottom-12 left-16 animate-fade-in">
         <h1 className="text-6xl font-extrabold font-serif text-white">
           Order your favourite food here.

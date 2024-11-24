@@ -28,7 +28,7 @@ const FoodDisplay = ({ category }) => {
                         alt=""
                       />
                     ) : (
-                      <div className="food-item-counter  absolute bottom-[15px] right-[15px] cursor-pointer rounded-full flex items-center gap-2 p-1 bg-slate-100 ">
+                      <div className="food-item-counter  absolute bottom-[15px] right-[15px] cursor-pointer rounded-full flex items-center gap-2 p-2 bg-slate-100 ">
                         <img
                           src={assets.remove_icon_red}
                           alt=""

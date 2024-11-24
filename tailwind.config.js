@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "header-image": "url('/src/assets/header_img.png')",
+        "header-image":
+          "url('./src/assets/header-image2.jpg')",
       },
       animation: {
         "fade-in": "fadeIn 2s forwards",
@@ -18,7 +19,7 @@ export default {
       },
       gridTemplateColumns: {
         "auto-fill-240": "repeat(auto-fill, minmax(240px, 1fr))",
-      }
+      },
     },
     plugins: [],
   },
