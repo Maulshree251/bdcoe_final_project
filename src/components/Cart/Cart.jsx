@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import './Cart.css'
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -28,7 +29,7 @@ const Cart = () => {
                   <p> ${item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>${item.price * cartItems[item._id]}</p>
-                  <p className="cursor-pointer">x</p>
+                  <p className="cursor-pointer" onClick={}>x</p>
                 </div>
                 <hr className="h-[1px] bg-[#e2e2e2] border-none" />
               </div>
@@ -42,14 +43,14 @@ const Cart = () => {
             <>
               <div className="cart-total-details flex justify-between text-[#555]">
                 <p>Subtotal</p>
-                <p>${getTotalCartamount()+2}</p>
+                <p>${getTotalCartamount()}</p>
               </div>
               <hr />
             </>
             <>
               <div className="cart-total-details flex justify-between text-[#555]">
                 <p>Delivery Fee</p>
-                <p>{2}</p>
+                <p>${getTotalCartamount() === 0 ? 0 : 2}</p>
               </div>
               <hr />
             </>
@@ -57,19 +58,36 @@ const Cart = () => {
             <>
               <div className="cart-total-details flex justify-between text-[#555]">
                 <p>Total</p>
-                <p>{0}</p>
-             </div>
-             <hr />
+                <p>
+                  {getTotalCartamount() === 0 ? 0 : getTotalCartamount() + 2}
+                </p>
+              </div>
+              <hr />
             </>
           </div>
-          <button className='text-white bg-orange-600 w-[max(15vw,200px)] py-3 px-0] rounded'>PROCEED TO CHECKOUT</button>
+          <Link to='/placeorder'>
+            
+            <button className="text-white bg-orange-600 w-[max(15vw,200px)] py-3 font-sans rounded">
+              PROCEED TO CHECKOUT
+            </button>
+          </Link>
         </div>
         <div className="cart-promo-code flex-1 ">
           <div>
-            <p className='text-[#555]'>If you have any promo code, Enter it here</p>
+            <p className="text-[#555]">
+              If you have any promo code, Enter it here
+            </p>
             <div className="cart-promocode-input mt-4 flex justify-between items-center bg-[#eaeaea] rounded">
-              <input type="text" placeholder="promo code" name="" id="" className='bg-transparent outline-none border-none pl-2'/>
-              <button className='w-[max(10vw,150px)] py-2 px-1 bg-black border-none text-white rounded'>Submit</button>
+              <input
+                type="text"
+                placeholder="promo code"
+                name=""
+                id=""
+                className="bg-transparent outline-none border-none pl-2"
+              />
+              <button className="w-[max(10vw,150px)] py-2 px-1 bg-black border-none text-white rounded">
+                Submit
+              </button>
             </div>
           </div>
         </div>
