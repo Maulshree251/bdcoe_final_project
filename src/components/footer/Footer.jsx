@@ -4,7 +4,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div className="footer bg-[#323232] text-[#d9d9d9] flex flex-col items-center gap-5 py-5 px-[8vw] pt-20 rounded-md" id='footer'>
+    <div className="footer bg-[#323232] text-[#d9d9d9] flex flex-col items-center gap-5 py-5 px-[8vw] pt-20" id='footer'>
       <div className="footer-content grid grid-cols-[2fr,1fr,1fr] gap-10">
         <div className="footer-content-left flex flex-col items-start gap-5">
           <div className="logo flex gap-2 items-center justify-start">
