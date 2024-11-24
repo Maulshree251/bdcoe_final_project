@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "header-image":
-          "url('./src/assets/header-image2.jpg')",
+          "url('./src/assets/header-image2.png')",
       },
       animation: {
         "fade-in": "fadeIn 2s forwards",
