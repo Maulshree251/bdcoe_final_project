@@ -14,9 +14,11 @@ const Header = () => {
           every dish is prepared with love and fresh ingredients. Dive in,
           explore the flavors, and let your taste buds dance!
         </p>
-        <button className="bg-white text-sm  px-6 py-3 rounded-full ">
-          View Menu
-        </button>
+        <a href="#explore-menu">
+          <button className="bg-white text-sm  px-6 py-3 rounded-full transition-transform-smooth hover:scale-110 duration-300  ">
+            View Menu
+          </button>
+        </a>
       </div>
     </div>
   );
