@@ -54,7 +54,7 @@ const Navbar = ({setShowLogin}) => {
         <img src={assets.search_icon} alt="" className=" h-6 cursor-pointer" />
 
         <div className="nav-search-icon relative">
-          <Link to="/Cart">
+          <Link to="/cart">
             <img
               src={assets.basket_icon}
               alt=""

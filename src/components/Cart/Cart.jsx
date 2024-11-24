@@ -29,7 +29,7 @@ const Cart = () => {
                   <p> ${item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>${item.price * cartItems[item._id]}</p>
-                  <p className="cursor-pointer" onClick={}>x</p>
+                  <p className="cursor-pointer" onClick={()=>removeFromCart(item._id)}>x</p>
                 </div>
                 <hr className="h-[1px] bg-[#e2e2e2] border-none" />
               </div>
